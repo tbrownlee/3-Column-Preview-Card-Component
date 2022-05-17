@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    --border-radius: 10px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--very-light-gray);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+}
+
+/* Sections */
+section {
+    padding: 45px 40px 45px 40px;
+}
+
+.first-section {
+    background-color: var(--bright-orange);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.second-section {
+    background-color: var(--dark-cyan);
+}
+
+.third-section {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+/* Photo */
+.car-icon {
+    width: 3.7rem;
+    margin-bottom: 28px;
+}
+
+/* h1, a, and p elements */
+h1, a {
+    color: var(--very-light-gray);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 2.6rem;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+p {
+    color: var(--transparent-white);
+    margin-bottom: 25px;
+    line-height: 1.8rem;
+}
+
+p, a {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+/* Buttons */
+a {
+    text-decoration: none;
+    background-color: var(--very-light-gray);
+    padding: 15px 32px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.first-section a {
+    color: var(--bright-orange);
+    border: 2px solid var(--bright-orange);
+}
+
+.second-section a {
+    color: var(--dark-cyan);
+    border: 2px solid var(--dark-cyan);
+}
+
+.third-section a {
+    color: var(--very-dark-cyan);
+    border: 2px solid var(--very-dark-cyan);
+}
+
+a:hover {
+    background-color: inherit;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+@media only screen and (min-width: 401px) {
+    main {
+        flex-direction: row;
+        width: 1000px;
+        position: absolute;
+    }
+
+    section {
+        padding: 45px 40px 45px 50px;
+    }
+
+    .first-section {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--border-radius);
+    }
+
+    .third-section {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: var(--border-radius);
+    }
+
+    .car-icon {
+        width: 4rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    p {
+        margin-bottom: 82px;
+        line-height: 1.7rem;
+        margin-right: 21px;
+    }
+
+    a {
+        padding: 14px 33px;
+        border-radius: 30px;
+    }
+
+    .first-section a {
+        border: 3px solid var(--bright-orange);
+    }
+    
+    .second-section a {
+        border: 3px solid var(--dark-cyan);
+    }
+    
+    .third-section a {
+        border: 3px solid var(--very-dark-cyan);
+    }
+    
+    a:hover {
+        border: 3px solid var(--very-light-gray);
+    }
+}
