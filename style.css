@@ -22,12 +22,14 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+
     background-color: var(--very-light-gray);
 }
 
 main {
     display: flex;
     flex-direction: column;
+
     width: 88%;
 }
 
@@ -37,9 +39,10 @@ section {
 }
 
 .first-section {
-    background-color: var(--bright-orange);
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+
+    background-color: var(--bright-orange);
 }
 
 .second-section {
@@ -47,74 +50,86 @@ section {
 }
 
 .third-section {
-    background-color: var(--very-dark-cyan);
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
+
+    background-color: var(--very-dark-cyan);
 }
 
 /* Photo */
 .car-icon {
-    width: 3.7rem;
     margin-bottom: 28px;
+
+    width: 3.7rem;
 }
 
 /* h1, a, and p elements */
-h1, a {
-    color: var(--very-light-gray);
-}
 
-h1 {
+.car-type {
     margin-bottom: 25px;
+
+    color: var(--very-light-gray);
+
     font-size: 2.6rem;
     font-family: "Big Shoulders Display", sans-serif;
 }
 
-p {
-    color: var(--transparent-white);
+.car-description {
     margin-bottom: 25px;
-    line-height: 1.8rem;
-}
+    
 
-p, a {
+    line-height: 1.8rem;
     font-family: "Lexend Deca", sans-serif;
+    color: var(--transparent-white);
 }
 
 /* Buttons */
-a {
-    text-decoration: none;
-    background-color: var(--very-light-gray);
-    padding: 15px 32px;
-    border-radius: 30px;
+.link {
     display: inline-block;
+
     margin-left: 1px;
+    border-radius: 30px;
+    padding: 15px 32px;
+
+    background-color: var(--very-light-gray);
+
+    font-family: "Lexend Deca", sans-serif;
+    text-decoration: none;
+}
+
+.link:hover {
+    border: 2px solid var(--very-light-gray);
+
+    background-color: inherit;
+
+    color: var(--very-light-gray);
 }
 
 .first-section a {
-    color: var(--bright-orange);
     border: 2px solid var(--bright-orange);
+
+    color: var(--bright-orange);
 }
 
 .second-section a {
-    color: var(--dark-cyan);
     border: 2px solid var(--dark-cyan);
+
+    color: var(--dark-cyan);
 }
 
 .third-section a {
-    color: var(--very-dark-cyan);
     border: 2px solid var(--very-dark-cyan);
+
+    color: var(--very-dark-cyan);
 }
 
-a:hover {
-    background-color: inherit;
-    color: var(--very-light-gray);
-    border: 2px solid var(--very-light-gray);
-}
 
 @media only screen and (min-width: 401px) {
     main {
-        flex-direction: row;
-        width: 1000px;
         position: absolute;
+        flex-direction: row;
+
+        width: 1000px;
     }
 
     section {
@@ -127,27 +142,32 @@ a:hover {
     }
 
     .third-section {
-        border-bottom-left-radius: 0;
         border-top-right-radius: var(--border-radius);
+        border-bottom-left-radius: 0;
     }
 
     .car-icon {
         width: 4rem;
     }
 
-    h1 {
+    .car-type {
         font-size: 2.6rem;
     }
 
-    p {
-        margin-bottom: 82px;
-        line-height: 1.7rem;
+    .car-description {
         margin-right: 21px;
+        margin-bottom: 82px;
+
+        line-height: 1.7rem;
     }
 
-    a {
-        padding: 14px 33px;
+    .link {
         border-radius: 30px;
+        padding: 14px 33px;
+    }
+
+    .link:hover {
+        border: 3px solid var(--very-light-gray);
     }
 
     .first-section a {
@@ -160,9 +180,5 @@ a:hover {
     
     .third-section a {
         border: 3px solid var(--very-dark-cyan);
-    }
-    
-    a:hover {
-        border: 3px solid var(--very-light-gray);
     }
 }
