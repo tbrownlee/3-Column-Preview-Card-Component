@@ -35,7 +35,7 @@ main {
 
 /* Sections */
 section {
-    padding: 45px 40px 45px 40px;
+    padding: 45px 0px 45px 40px;
 }
 
 .first-section {
@@ -76,7 +76,7 @@ section {
 
 .car-description {
     margin-bottom: 25px;
-    
+    max-width: 250px;
 
     line-height: 1.8rem;
     font-family: "Lexend Deca", sans-serif;
@@ -133,7 +133,7 @@ section {
     }
 
     section {
-        padding: 45px 40px 45px 50px;
+        padding: 45px 27px 45px 45px;
     }
 
     .first-section {
@@ -157,6 +157,7 @@ section {
     .car-description {
         margin-right: 21px;
         margin-bottom: 82px;
+        max-width: 225px;
 
         line-height: 1.7rem;
     }
